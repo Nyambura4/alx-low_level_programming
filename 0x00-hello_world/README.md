@@ -1,1 +1,1 @@
-Programming is like building a multi-lingual puzzle
+Proper grammar,piece of art
