@@ -1,1 +1,1 @@
-Task Do what you do bette and do more of what you do
+Write a program that prints all possible combinations of two two-digit numbers.
