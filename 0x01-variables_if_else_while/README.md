@@ -1,1 +1,1 @@
-Task 1. Last digit
+Task 2. Alphabet game
