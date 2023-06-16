@@ -1,8 +1,7 @@
 #!/bin/bash
-
 #include<stdio.h>
 
-/**
+i/**
 
  * main - Entry point
 
