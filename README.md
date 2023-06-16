@@ -1,1 +1,1 @@
-Task 5, print f
+Task 6, size

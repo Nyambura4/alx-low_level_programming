@@ -1,1 +1,1 @@
-Prooper grammar,master piece
+Territory does not make a nation
