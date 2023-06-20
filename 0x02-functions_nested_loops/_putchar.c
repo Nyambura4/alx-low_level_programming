@@ -1,9 +1,14 @@
 #include <unistd.h>
 
 /**
- * Writes the character c to stdout
+ * _putchar - Writes the character c to stdout
+ * @c: The character to be written
+ *
+ * Return: On success, returns the number of bytes written.
+ *         On error, returns -1.
  */
 int _putchar(char c)
 {
-    return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
+
