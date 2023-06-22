@@ -1,23 +1,27 @@
 #include <stdio.h>
 /**
- * Prints the times table up to a given number.
- *
- * @param n The number to generate the times table for.
+ * main - computes and prints the sum of all the multiples
+ * of 3 or 5 below 1024
+ * Return: Always 0 (success)
  */
-void print_times_table(int n) {
-// Check if n is within the valid range
-if (n < 0 || n > 15) {
-return;  // Exit the function without printing anything
+int main(void)
+{
+unsigned long int sum3, sum5, sum;
+int i;
+sum3 = 0;
+sum5 = 0;
+sum = 0;
+for (i = 0; i < 1024; ++i)
+{
+if ((i % 3) == 0)
+{
+sum3 = sum3 + i;
+} else if ((i % 5) == 0)
+{
+sum5 = sum5 + i;
 }
-// Print the times table
-for (int i = 0; i <= n; i++) {
-for (int j = 0; j <= n; j++) {
-int product = i * j;
-if (j > 0) {
-printf(",   "); // Adjust spacing
 }
-printf("%3d", product); // Print with 3-digit spacing
-}
-printf("\n");
-}
+sum = sum3 + sum5;
+printf("%lu\n", sum);
+return (0);
 }
