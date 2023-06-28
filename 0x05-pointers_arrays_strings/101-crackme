@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define PASSWORD_LENGTH 10
+
+void generatePassword(char *password, int length) {
+int i;
+    
+srand(time(NULL)); // Seed the random number generator with the current time
+    
+for (i = 0; i < length; i++) {
+// Generate a random character or integer between ASCII range 33-126
+password[i] = rand() % 94 + 33;
+}
+    
+password[length] = '\0'; // Null-terminate the password string
+}
+
+int main() {
+char password[PASSWORD_LENGTH + 1]; // Add space for the null terminator
+    
+generatePassword(password, PASSWORD_LENGTH);
+    
+printf("Generated password: %s\n", password);
+    
+return 0;
+}
